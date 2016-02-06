@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>11 Button dropdowns</title>
+  <link rel="stylesheet" href="../third_party/bootstrap.min.css">
+  <script src="../third_party/jquery.min.js"></script>
+  <script src="../third_party/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="program.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        <h3>11 Button dropdowns</h3>
+      </div>
+      <div class="col-sm-4">
+        <img class="pull-right" src="images/javascript.jpg" alt="javascript" height="40" />
+      </div>
+    </div>
+    <div class="row">
+
+      <h3>Problem</h3>
+      <p>Read button dropdown selection.</p>
+
+      <h3>Html</h3>
+<pre>
+&lt;select id=&quot;selectControl&quot; class=&quot;form-control&quot;&gt;
+  &lt;option value=&quot;one&quot;&gt;One&lt;/option&gt;
+  &lt;option value=&quot;two&quot;&gt;Two&lt;/option&gt;
+  &lt;option value=&quot;three&quot;&gt;Three&lt;/option&gt;
+  &lt;option value=&quot;four&quot;&gt;Four&lt;/option&gt;
+  &lt;option value=&quot;five&quot;&gt;Five&lt;/option&gt;
+&lt;/select&gt;
+</pre>
+
+        <h3>Javascript</h3>
+<pre>
+$(document).ready(function () {
+  $(&quot;#runButton&quot;).click(program);
+  $(&#39;#selectControl&#39;).change(selectControlChanged);
+});
+
+var selectControlChanged = function () {
+  console.log(&#39;changed&#39;);
+};
+
+var program = function () {
+  var $select = $(&#39;#selectControl option:selected&#39;);
+  var selectedValue = $select.val();
+  var selectedText = $select.text();
+  console.log(&#39;value = &#39; + selectedValue + &#39; text = &#39; + selectedText);
+};
+</pre>
+
+    </div>
+
+    <div class="row">
+        <p>Open this document in Chrome and open the developer tools Windows: F12 or Ctrl-shift+I, Mac: Cmd + Opt + I.</p>
+
+      <select id="selectControl" class="form-control">
+        <option value="one">One</option>
+        <option value="two">Two</option>
+        <option value="three">Three</option>
+        <option value="four">Four</option>
+        <option value="five">Five</option>
+      </select>
+
+        <p>Click run button.</p>
+      <button id="runButton" type="button" class="btn btn-primary">Run</button>
+
+      <p>Observe the console output.</p>
+      <h3>Your task</h3>
+
+      <p>Modify <code>index.html</code> to add more options.</p>
+    </div>
+  </div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
