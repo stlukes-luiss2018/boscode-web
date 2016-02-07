@@ -1,8 +1,8 @@
 ﻿$(document).ready(function () {
-  $("#runButton").click(Add2Numbers);
+  $("#runButton").click(add2Numbers);
 });
 
-var Add2Numbers = function () {
+var add2Numbers = function () {
   var firstNumber = $("#firstNumberInput").val();
   firstNumber = parseInt(firstNumber);
 
