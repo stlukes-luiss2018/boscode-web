@@ -1,5 +1,5 @@
 ﻿$(document).ready(function () {
-  $("#runButton").click(program);
+  $('#runButton').click(program);
 });
 
 var program = function() {
@@ -8,17 +8,17 @@ var program = function() {
 
   switch (signal) {
     case 'red':
-      console.log("stop");
+      console.log('stop');
       break;
     case 'amber':
-      console.log("stop");
+      console.log('stop');
       break;
     case 'green':
-      console.log("proceed through intersection");
+      console.log('proceed through intersection');
       break;
 
     default:
-      console.log("proceed with caution");
+      console.log('proceed with caution');
   }
 
 };

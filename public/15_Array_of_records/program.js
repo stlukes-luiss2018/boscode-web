@@ -1,5 +1,5 @@
 ﻿$(document).ready(function () {
-  $("#runButton").click(program);
+  $('#runButton').click(program);
 });
 
 var program = function () {
@@ -24,7 +24,7 @@ var program = function () {
   productArray[1].price = 8.99;
 
   for (var i = 0; i < 2; i = i + 1) {
-    console.log("name = " + productArray[i].name + " price = " + productArray[i].price);
+    console.log('name = ' + productArray[i].name + ' price = ' + productArray[i].price);
   }
 
 };

@@ -1,5 +1,5 @@
 ﻿$(document).ready(function () {
-  $("#runButton").click(program);
+  $('#runButton').click(program);
 });
 
 var program = function() {

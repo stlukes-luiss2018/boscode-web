@@ -1,15 +1,15 @@
 ﻿$(document).ready(function () {
-  $("#runButton").click(add2Numbers);
+  $('#runButton').click(add2Numbers);
 });
 
 var add2Numbers = function () {
-  var firstNumber = $("#firstNumberInput").val();
+  var firstNumber = $('#firstNumberInput').val();
   firstNumber = parseInt(firstNumber);
 
-  var secondNumber = $("#secondNumberInput").val();
+  var secondNumber = $('#secondNumberInput').val();
   secondNumber = parseInt(secondNumber);
 
   var total = firstNumber + secondNumber;
 
-  console.log("the sum of your 2 numbers is " + total);
+  console.log('the sum of your 2 numbers is ' + total);
 };
